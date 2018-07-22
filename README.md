@@ -1,2 +1,35 @@
 # react-native-countdown-bar
 yaptim, oldu, cok da guzel oldu.
+
+CountdownBar
+
+## Installation
+Run `npm install react-native-countdown-bar --save`
+
+## Props
+| Name | Description | Type | Default Value |
+| :--- | :----- | :--- | :---: |
+| time | Forward Time | object | 10 |
+| BgColor | Background color | string | ![#1abc9c](https://placehold.it/15/FAB913/000000?text=+) `'#1abc9c'` |
+| BgColorIn | Background color in color | string | ![#fff](https://placehold.it/15/000/000000?text=+) `'#fff'` |
+| complete | complete function | func | null |
+
+## Preview
+
+![React Native CountdownBar](https://media.giphy.com/media/8UGW2yvW48ns85SmMj/giphy.gif "React Native CountdownBar")
+
+## Code
+```javascript
+import CountdownBar from "react-native-countdown-bar";
+
+render() {
+    return (
+      <CountdownBar 
+          time={10}
+          BgColor="#1abc9c"
+          BgColorIn="#fff"
+          complete={()=> console.log("complete")}
+        />  
+    )
+}
+```
