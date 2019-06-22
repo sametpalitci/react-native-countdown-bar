@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   contentIn:{
     backgroundColor:'#FFFFFF',
     flexDirection: 'row', 
-    height: 50
+    height: '100%'
   }
 });
   
