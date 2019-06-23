@@ -22,14 +22,10 @@ Run `npm install react-native-countdown-bar --save`
 ```javascript
 import CountdownBar from "react-native-countdown-bar";
 
-render() {
-    return (
       <CountdownBar 
           time={10}
           BgColor="#1abc9c"
           BgColorIn="#fff"
           complete={()=> console.log("complete")}
-        />  
-    )
-}
+        />
 ```
