@@ -20,7 +20,8 @@ static propTypes = {
   time: PropTypes.number,
   BgColor: PropTypes.string,
   BgColorIn: PropTypes.string,
-  complete : PropTypes.func
+  complete : PropTypes.func,
+  height: PropTypes.string
 };
   componentDidMount() {
     const {time} = this.props;
@@ -55,7 +56,7 @@ static propTypes = {
   return (
     <View style={styles.container}>
         <View style={styles.content}>
-          <View style={[styles.contentIn, {backgroundColor:this.props.BgColorIn}]}>
+          <View style={[styles.contentIn, {backgroundColor:this.props.BgColorIn, height: this.props.height}]}>
             <View style={this.jewelStyle()}/>
           </View>
         </View>
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
   contentIn:{
     backgroundColor:'#FFFFFF',
     flexDirection: 'row', 
-    height: '100%'
+    height: 40
   }
 });
   
