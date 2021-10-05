@@ -13,6 +13,7 @@ Run `npm install react-native-countdown-bar --save`
 | BgColor | Background color | string | ![#1abc9c](https://placehold.it/15/FAB913/000000?text=+) `'#1abc9c'` |
 | BgColorIn | Background color in color | string | ![#fff](https://placehold.it/15/000/000000?text=+) `'#fff'` |
 | complete | complete function | func | null |
+| height | Height of the bar | string | 40 |
 
 ## Preview
 
